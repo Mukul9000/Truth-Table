@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Truth Table Generator</title>
+</head>
+<body>
+<main id="main">
+    <!-- Input -->
+    <div class="align-center container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" width="8%">
+        <center>
+            <div class="heading">
+                <h1>Truth Table Generator 🚀</h1>
+            </div>
+        </center>
+        <p>Enter your boolean logic expression in the following format:<br>
+            AND = <span class="example">AB</span>&emsp;
+            OR = <span class="example">A+B</span>&emsp;
+            NOT = <span class="example">A'</span><br>
+            NAND = <span class="example">(AB)'</span>
+            NOR = <span class="example">(A+B)'</span></p>
+        <input autofocus id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text">
+        <noscript>
+            <p>This app requires JavaScript to run. Please enable JavaScript and refresh this page.</p>
+        </noscript>
+    </div>
+    <br>
+    <!-- Output -->
+    <div class="align-center container">
+        <div id="table-placeholder"></div>
+    </div>
+</main>
+<!-- Custom Scripts -->
+<script src="generator.js"></script>
+</body>
+</html>
